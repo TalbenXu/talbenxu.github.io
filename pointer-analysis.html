@@ -53,7 +53,7 @@
 					<ul class="nav">
 						<li><a href="./index.html" title="">Home</a></li>
 						<li><a href="./blogs.html" title="">Blog</a></li>
-						<!--<li><a href="./services.html" title="">Services</a></li>
+						<!-- <li><a href="./services.html" title="">Services</a></li>
 						<li><a href="./contact.html" title="">Contact</a></li>
 						<li><a href="./components.html" title="">Components</a></li> -->
 					</ul>
@@ -79,63 +79,49 @@
 		</header>
 		<main class="" id="main-collapse">
 			<div class="row">
-				<ul>
-					<li>
-						<a href="./random-testing.html"><h3>Random Testing</h3></a>
-					</li>
-					<li><a href="./automated-test-generation.html"><h3>Automated Test Generation</h3></li>
-					<li><a href="./dataflow-analysis.html"><h3>Dataflow Analysis</h3></li>
-						<li><a href="./pointer-analysis.html"><h3>Pointer Analysis</h3></li>
-				</ul>
-				<!-- <div class="col-xs-12 col-md-8">
+				<div class="col-xs-12 col-md-8">
 					<div class="section-container-spacer">
-						<h1>Automated Test Generation</h1>
+						<h1>Pointer Analysis</h1>
 						<p>
-							Automated test generation is always what people tend to as writing
-							test cases manually is quite tedious. However, it is not practical
-							for entire systems to using that method, as it will have a lot of
-							possible input for the entire process. So normally, there are
-							techniques for automatically testing the functionality of the
-							smallest testable parts of an application, called units, and so
-							this approach called unit testing.
+							Pointer in prevalent in most of the mainstream languages and the
+							analysis involves the pointer belongs to pointer analysis. Again
+							it typically needs to generate the CFG, but at the same time as it
+							involves the heap structure, so one dimension is of pointer
+							analysis is call heap abstraction.
 						</p>
 						<p>
 							<img
 								class="img-responsive"
 								alt=""
-								src="./assets/images/Automated-Test-Generation-1.png"
+								src="./assets/images/pointer-analysis-1.png"
 							/>
 						</p>
 					</div>
-					<h3>Study Direction</h3>
+					<h3>May-aliasing analysis</h3>
 					<p>
-						As the automated test is using a machine to auto-generation all the
-						possible input for the unit, then in order to increase the
-						effectiveness, people need to find the way to role out the illegal
-						and redundant input. So there mainly two methods to deal with this
-						situation.
+						Usually, we refer pointer analysis as may-aliasing analysis, which
+						says if two-pointer is likely alias then the answer is yes. If the
+						answer is no but actually there not alias then in this context we
+						that false positive.
 					</p>
-					<h3>Korat</h3>
+					<h3>Pointer analysis is Hard</h3>
 					<p>
-						Korat is a project conducted by three graduates in MIT, the
-						principle to here is utilized the pre-condition to role out the part
-						of bad input and then using a vector to represent the
-						instructions.(using type to decide the possible node, and using k to
-						determine the searching space.
-					</p>
-					<p>
-						So it can really get the all the possible inputs however the
-						performance of that method largely depends on the pre-condition(i.e
-						a bad pre-condition will lead to bad Korat testing
+						As the relationship between that can recursive represented so in the
+						source code it is hard to analyze. So approximation is always
+						needed. One key is heap abstraction another one is the CFG
+						abstraction. <br />CFG abstraction <br />Context<br />
+						Heap abstraction<br />
+						Modeling aggregating data
 					</p>
 
-					<h3>Feedback-directed testing</h3>
 					<p>
-						Unlike Korat depended on the pre-condition, feedback-directed
-						testing relly on the iterative get the output and using the sub
-						output to construct the following one..
+						<img
+							class="img-responsive"
+							alt=""
+							src="./assets/images/pointer-analysis-2.png"
+						/>
 					</p>
-				</div> -->
+				</div>
 			</div>
 		</main>
 
